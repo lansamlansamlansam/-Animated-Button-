@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Button Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000000;
+            cursor: pointer;
+        }
+        
+        .button {
+            padding: 10px 20px;
+            font-size: 48px;
+            font-family: cursive;
+            text-align: center;
+            color: #002506;
+            background-color: #222;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 0 5px #09e7ac, 0 0 10px #09e7ac, 0 0 20px #09e7ac;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .button:hover {
+            background-color: #333;
+            color: #09e7ac;
+            box-shadow: 0 0 10px #ffad9a, 0 0 20px #ffad9a, 0 0 30px #ffad9a;
+            transform: scale(1.05);
+        }
+        
+        .button:active {
+            background-color: #888888;
+            box-shadow: 0 0 5px #ebe1ab, 0 0 10px #ebe1ab;
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+
+<body>
+    <button class="button">Button</button>
+</body>
+
+</html>
